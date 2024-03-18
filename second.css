@@ -1,0 +1,382 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.f1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgb(131, 81, 81)50%,rgb(172, 138, 138) 50%);
+}
+
+.f2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(rgb(131, 81, 81)50%,rgb(172, 138, 138) 50%);
+}
+
+
+/* .card{
+    position: relative;
+    width: 600px;
+    height: 380px;
+    background:bisque;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+} */
+/* .card .img{
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+/*img into the caed calss div*/
+
+.card {
+    width:600px;
+    height: 380px;/* hight change kora hota para for phone view*/
+    border: 3px solid #f5f1f1;
+    border-radius: 10px;
+    position: relative;
+    /* overflow: hidden; */
+    background-color:rgb(242, 176, 176);
+    display: flex;
+    overflow: hidden;
+    transition: 0.1 ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border-radius:10% ; */
+    /* border-radius: 80px 80px 80px 80px; */
+  }
+
+  .card img {
+    padding: 10px 10px 35px 10px;
+    width: 100%;
+    height: 400px; /* hight 470px korta hota para for phone view*/
+    object-fit: cover;
+    overflow: hidden;
+    border-radius:10% ; /*border surcal korar jonno */
+    /* border-radius:5px solid white ; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+  }
+
+   /* .card-name {
+     position: absolute; 
+    bottom: 0; 
+     left: 0; 
+    background: rgba(255, 255, 255, 0.8); 
+     width: 100%; 
+     padding: 10px; 
+     text-align: center; 
+  } */
+
+  .card img {
+    /* max-width: 250px; */
+    transition: 0.5s ease-in-out;
+  }
+
+  .card :hover img{
+    transform: rotate(-10deg) translatex(-20px);
+    cursor: pointer;
+  }
+
+  .card .details{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    background: rgb(131, 81, 81); 
+  }
+
+  .card .details {
+    margin: 10px 10px 10px 10px;
+    /* margin-bottom: 1em; */
+    position: relative;
+    width: 300px;
+    height: 95%;
+    background: rgb(131, 81, 81);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding: 80px 40px 60px 40px; */
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 10%;
+    transition: 0.5s ease-in-out;
+}
+  .card .details:hover{
+    transform: rotate(+10deg) translatex(+20px);
+    cursor: pointer;
+  }
+
+  /* .card .details::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom:10px solid transparent ;
+    border-left: 10px solid white; 
+  } */
+  .details{
+    color:rgb(249, 245, 245);
+  }
+  h1{
+    line-height: 1em;
+  }
+  h2{
+    font-size:25px ;
+    font-weight: 300;
+    text-transform: none;
+    opacity: 0.85;
+  }
+  .card .details p{
+           color: rgb(152, 238, 238);
+           opacity: 0.85;
+           font-size: 0.8em;
+  }
+  .card .details .Quantity{
+    display: flex;
+    gap:10px;
+  }
+  .card .details .Quantity li{
+    padding-left: 5px;
+    list-style:none ;
+    color:#ccc;
+    font-size: 0.9em;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* transition: 0.5s; */
+    opacity: 0.65;
+
+  }
+  .card .details .Quantity li:hover{
+    color:rgb(100, 63, 63);
+    background-color:white ;
+    opacity: 1;
+  }
+ .price {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .price a{
+    display: inline-block; /* Makes the <a> tag behave like a block but only take up as much width as necessary */
+    width: 80px; /* Width of the box */
+    height: 40px; /* Height of the box */
+    background-color: rgb(237, 249, 253); /* Background color of the box */
+    color: black; /* Text color */
+    text-align: center; /* Centers text horizontally */
+    line-height: 40px; /* Centers text vertically, should be the same as the box height */
+    text-decoration: none; /* Removes the underline from the link */
+  }
+
+
+  .third{
+    position: relative;
+    width: 600px;
+    height: 380px;
+    background:bisque;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  } 
+  .third .img{
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .third{
+    width:600px;
+    height: 380px;/* hight change kora hota para for phone view*/
+    border: 3px solid #f5f1f1;
+    border-radius: 10px;
+    position: relative;
+    /* overflow: hidden; */
+    background-color:rgb(242, 176, 176);
+    display: flex;
+    overflow: hidden;
+    transition: 0.1 ease-in-out;
+    /* border-radius:10% ; */
+    /* border-radius: 80px 80px 80px 80px; */
+  }
+  .third img {
+    padding: 10px 10px 35px 10px;
+    width: 100%;
+    height: 400px; /* hight 470px korta hota para for phone view*/
+    overflow: hidden;
+    border-radius:10% ; /*border surcal korar jonno */
+    /* border-radius:5px solid white ; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .third-name {
+    position: absolute; 
+   bottom: 0; 
+    left: 0; 
+   background: rgba(255, 255, 255, 0.8); 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+  } 
+  .third img {
+    /* max-width: 250px; */
+    transition: 0.5s ease-in-out;
+  }
+  .third :hover img{
+    transform: rotate(-10deg) translatex(-20px);
+    cursor: pointer;
+  }
+  /* dakta hoba */
+   .third .des{
+    position: relative;
+    width: 500px;
+    height: 95%;
+    background: rgb(131, 81, 81); 
+  }
+  .des{
+    margin: 10px;
+  }
+   .des{
+    /* padding: 10px 10px 15px 10px; */
+    /* margin: 10px 10px; */
+    /* margin-bottom: 20px; */
+    position: relative;
+    width: 500px;
+    height: 100%;
+    background: rgb(131, 81, 81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px ;
+    flex-direction: column;
+    border-radius:10% ;
+    transition: 0.5s ease-in-out;
+  }
+  .third .des:hover{
+    transform: rotate(+10deg) translatex(+20px);
+    cursor: pointer;
+  }
+  /* .third .des::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom:10px solid transparent ;
+    border-left: 10px solid white; 
+  } */
+  .des{
+    color:rgb(249, 245, 245);
+  }
+  h1{
+    line-height: 1em;
+  }
+  h2{
+    font-size:25px ;
+    font-weight: 300;
+    text-transform: none;
+    opacity: 0.85;
+  }
+  .third .des p{
+    color: rgb(152, 238, 238);
+    opacity: 0.85;
+    font-size: 0.8em;
+  }
+  .third .des .Quantity1{
+  display: flex;
+  gap:10px;
+  }
+  .third .des .Quantity1 li{
+    padding-left: 5px;
+    list-style:none ;
+    color:#ccc;
+    font-size: 0.9em;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* transition: 0.5s; */
+    opacity: 0.65;
+  }
+  .third .des .Quantity1 li:hover{
+    color:rgb(100, 63, 63);
+    background-color:white ;
+    opacity: 1;
+  }
+  /* .pri {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  } */
+  .pri a{
+    display: inline-block; /* Makes the <a> tag behave like a block but only take up as much width as necessary */
+    width: 80px; /* Width of the box */
+    height: 40px; /* Height of the box */
+    background-color: rgb(237, 249, 253); /* Background color of the box */
+    color: black; /*Text color */
+    text-align: center; /* Centers text horizontally */
+    line-height: 40px; /* Centers text vertically, should be the same as the box height */
+    text-decoration: none; /* Removes the underline from the link */
+  }
+/* Styles for the popup container */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  text-align: center;
+}
+
+/* Styles for the popup content */
+.popup-content {
+  background-color: rgb(172, 138, 138);
+  width: 300px;
+  margin: 100px auto;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative; /* Added */
+}
+
+/* Styles for the close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}

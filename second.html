@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="second.css" />
+  </head>
+  <body>
+    <div class="f1">
+      <div class="card">
+        <div class="imgbox">
+          <img src="cofee-second-page.jpg" />
+        </div>
+        <div class="details">
+          <h1>Cold Coffee</h1>
+          <br />
+          <h2>Couple Coffee 🧑‍🤝‍🧑</h2>
+          <br />
+          <h3>Coffee Details</h3>
+          <p>Chilled coffee, often sweetened and milked, served over ice.</p>
+          <br />
+          <h4>Quantity</h4>
+          <br />
+          <ul class="Quantity" id="showPopup">
+            <li>1 cup</li>
+            <li>2 cup</li>
+            <li>3 cup</li>
+            <li>4 cup</li>
+          </ul>
+          <br />
+          <div class="price">
+            <h1><sup>$</sup>500</h1>
+            <a id="showPopup3" href="#">Buy now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="f2">
+      <div class="third">
+        <div class="photo">
+          <img src="third coffee.jpg" />
+        </div>
+        <div class="des">
+          <h2>Cappuccino</h2>
+          <br />
+          <h3>Couple coffee</h3>
+          <br />
+          <h3>Coffee Details</h3>
+          <p>
+            Blend cold brew, milk, ice, sweetener for delicious iced coffee.
+          </p>
+          <br />
+          <h4>Quantity</h4>
+          <br />
+          <ul class="Quantity1" id="showPopup2">
+            <li>1 cup</li>
+            <li>2 cup</li>
+            <li>3 cup</li>
+            <li>4 cup</li>
+          </ul>
+          <br />
+          <div class="pri">
+            <h2><span>$</span>800</h2>
+            <a id="showPopup2" href="#"> Buy now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-container" id="popupContainer">
+      <div class="popup-content">
+        <h2>Coming Soon!</h2>
+        <p>Our website is currently under construction. Stay tuned!</p>
+        <span class="close-btn" onclick="closePopup()">×</span>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to show the popup when the button is clicked
+      document
+        .getElementById("showPopup")
+        .addEventListener("click", function () {
+          document.getElementById("popupContainer").style.display = "block";
+        });
+
+      document
+        .getElementById("showPopup2")
+        .addEventListener("click", function () {
+          document.getElementById("popupContainer").style.display = "block";
+        });
+
+      document
+        .getElementById("showPopup3")
+        .addEventListener("click", function () {
+          document.getElementById("popupContainer").style.display = "block";
+        });
+
+      // JavaScript to hide the popup when the close button is clicked
+      function closePopup() {
+        document.getElementById("popupContainer").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

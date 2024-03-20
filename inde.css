@@ -78,14 +78,37 @@ margin-right: 20px;
         width: 100%;
     }
 }
+
 .mid{
+        /* padding-left: 10px; */
         display: flex;
         padding-left: 30px;
         padding-top: 100px;
         color:white;
         font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size:20px;
+        font-size:20px;       
 }
+
+ /* Keyframes for the animation */
+ @keyframes typing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 315px;  /*width:100% korla curser ta blink kora hol page jaba taii ota korboo na besause amar full dorkar naii*/ /* akhana % kora jaba na nahola aliment ar problem hoba tai px use korta hoba*/
+    }
+  }
+
+  /* CSS for the animated text */
+   .text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid rgb(241, 238, 232); /* Adjust border properties to change cursor style */
+    font-weight: bold;
+    color:white;
+    animation: typing 4s steps(40, end) alternate infinite;
+  }
+
 .spa{
     padding-left: 30px;
 
@@ -121,11 +144,14 @@ margin-right: 20px;
     height: 100%;
     /* background:radial-gradient( transparent, rgba(14, 224, 213, 0.4),rgb(157, 255, 0)) ; */
     background:linear-gradient(80deg, transparent,rgb(170, 63, 63),rgb(169, 43, 43),transparent);
-    transition: left 3.0s;
+    transition: left 1.0s;
   }
 
   .button:hover::before {
     left: 100%;
 
   }
+ 
+
+
   

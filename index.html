@@ -6,15 +6,46 @@
     <title>Document</title>
     <link rel="stylesheet" href="inde.css" />
   </head>
+
   <body>
-    <div class="header">
-      <span>Coffee.</span>
+    <header class="header">
+      <div class="navbar">
+        <h2 class="logo brand-logo"><a href="index.html">Coffee</a></h2>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" id="hamburger-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M3 12h18M3 6h18M3 18h18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </label>
+        <ul class="links">
+          <li><a href="https://www.britannica.com/topic/coffee" class="listitems underline-hover">About Coffee</a></li>
+          <li><a href="#section2" class="listitems underline-hover">Best Coffee</a></li>
+          <li>
+            <a href="#section4" class="listitems underline-hover">Contact </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- <div class="header">
+      <div id="heading">Coffee.</div>
       <div class="list">
         <p class="listitems underline-hover"><a href="https://www.britannica.com/topic/coffee">About Coffee</a></p>
         <p class="listitems underline-hover"><a href="https://happycredit.in/blog/best-coffee-in-india/">Best Coffee</a></p>
         <p class="listitems underline-hover"><a href="#">Contact</a></p>
-      </div>
-    </div>
+        <div for="check" class="open-menu"><i class="fas fa-bars"></i></div>
+      </div> -->
+
     <div class="mid">
       <div class="text">Let's start a day with a coffee <span class="textimg"></span> </div>
       </div>

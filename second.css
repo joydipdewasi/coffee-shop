@@ -380,3 +380,21 @@
   cursor: pointer;
   font-size: 20px;
 }
+
+/* @media screen and (max-width: 623px) {
+  .f1{
+    width: 100vh;
+  }
+
+  .imgbox,.details{
+    overflow: hidden;
+    width: auto;
+  }
+}
+
+
+@media screen and (max-width: 623px) {
+  .f2{
+    width: 100vh;
+  }
+} */

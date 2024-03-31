@@ -42,9 +42,15 @@ body {
 .brand-logo a{
   cursor: pointer;
   font-family: 'Bree Serif', serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 550;
 }
+
+/* @media screen and (max-width: 600px) {
+  .brand-logo a{
+    font-size:3.5rem;
+  }
+} */
 
 .brand-logo a:hover{
   color:rgb(131, 81, 81) ;
@@ -241,26 +247,3 @@ body {
     font-size: 1.5rem;
 }
 }
-
-/* @media(max-width: 687px) {
-     .list{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top:0;
-        right:-100px;
-        z-index:100;
-        background-color: rgb(179, 126, 126);
-        transition:all 0.2s ease-in-out;
-        }
-        .list p{ margin-top: 40px ;}
-        .list p a {padding: 10px;}
-}
-@media(max-width: 687px) {
-  .list{
-    display: none;
-  }
-} */

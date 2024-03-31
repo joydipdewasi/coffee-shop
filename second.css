@@ -381,11 +381,11 @@
   font-size: 20px;
 }
 
-/* @media screen and (max-width: 623px) {
+@media screen and (max-width: 623px) {
   .f1{
     width: 100vh;
   }
-
+  
   .imgbox,.details{
     overflow: hidden;
     width: auto;
@@ -397,4 +397,4 @@
   .f2{
     width: 100vh;
   }
-} */
+}

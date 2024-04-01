@@ -10,11 +10,12 @@
     <div class="f1">
       <div class="card">
         <div class="imgbox">
-          <img src="cofee-second-page.jpg" />
+          <img src="imgbox_caraktion_img.avif" />
         </div>
         <div class="details">
           <h1>Cold Coffee</h1>
           <br />
+
           <h2>Couple Coffee 🧑‍🤝‍🧑</h2>
           <br />
           <h3>Coffee Details</h3>
@@ -63,7 +64,9 @@
           <br />
           <div class="pri">
             <h2><span>$</span>8</h2>
-            <a id="showPopup2" href="#"> Buy now</a>
+            <button id="showPopup2">
+              <a id="showPopup3" href="#">Buy now</a>
+            </button>
           </div>
         </div>
       </div>
@@ -71,9 +74,25 @@
 
     <div class="popup-container" id="popupContainer">
       <div class="popup-content">
-        <h2>Coming Soon!</h2>
-        <p>Our website is currently under construction. Stay tuned!</p>
-        <span class="close-btn" onclick="closePopup()">×</span>
+        <div class="close-btn" onclick="closePopup1()">X</div>
+        <div>
+          <h2>Coming Soon!</h2>
+          <p>Our website is currently under construction. Stay tuned!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- poppap massage relode time -->
+
+    <div class="bsdk">
+      <div class="pop" id="pop">
+        <div class="close" onclick="closePopup()">X</div>
+        <div>
+          <p class="amibaal">
+            The page view look good in Desktop and Tablet but not look good in
+            Mobile
+          </p>
+        </div>
       </div>
     </div>
 
@@ -98,9 +117,24 @@
         });
 
       // JavaScript to hide the popup when the close button is clicked
-      function closePopup() {
+      function closePopup1() {
         document.getElementById("popupContainer").style.display = "none";
       }
+
+      function displayGreeting() {
+        // Show the popup
+        document.getElementById("pop").style.display = "block";
+      }
+
+      // Function to close the popup
+      function closePopup() {
+        document.getElementById("pop").style.display = "none";
+      }
+
+      // Call the function when the page loads
+      window.onload = function () {
+        displayGreeting();
+      };
     </script>
   </body>
 </html>

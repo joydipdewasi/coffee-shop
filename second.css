@@ -22,26 +22,6 @@
   background: linear-gradient(rgb(131, 81, 81)50%,rgb(172, 138, 138) 50%);
 }
 
-
-/* .card{
-    position: relative;
-    width: 600px;
-    height: 380px;
-    background:bisque;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
-} */
-/* .card .img{
-    position: relative;
-    min-width: 300px;
-    height: 100%;
-    background: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-} */
-/*img into the caed calss div*/
-
 .card {
     width:600px;
     height: 380px;/* hight change kora hota para for phone view*/
@@ -71,16 +51,6 @@
     /* align-items: center; */
 
   }
-
-   /* .card-name {
-     position: absolute; 
-    bottom: 0; 
-     left: 0; 
-    background: rgba(255, 255, 255, 0.8); 
-     width: 100%; 
-     padding: 10px; 
-     text-align: center; 
-  } */
 
   .card img {
     /* max-width: 250px; */
@@ -120,16 +90,6 @@
     cursor: pointer;
   }
 
-  /* .card .details::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom:10px solid transparent ;
-    border-left: 10px solid white; 
-  } */
   .details{
     color:rgb(249, 245, 245);
   }
@@ -332,12 +292,7 @@
     background-color:white ;
     opacity: 1;
   }
-  /* .pri {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-  } */
+ 
   .pri a{
     display: inline-block; /* Makes the <a> tag behave like a block but only take up as much width as necessary */
     width: 80px; /* Width of the box */
@@ -362,39 +317,116 @@
 }
 
 /* Styles for the popup content */
-.popup-content {
+#popupContainer {
+  /* display: flex; */
   background-color: rgb(172, 138, 138);
   width: 300px;
-  margin: 100px auto;
+  height: 200px;
+  /* margin: 100px auto; */
   padding: 50px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  position: relative; /* Added */
+  position: absolute;
+  position: fixed;
+  top: 15%;
+  left: 40%;
+  /* max-width: 90%; */
+  z-index: 9999;
+  max-width: 90%;
+  text-align: center;
 }
 
 /* Styles for the close button */
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 22px;
+  right: 22px;
   cursor: pointer;
-  font-size: 20px;
+  margin-right: 10px;
+  color: #000000;
 }
 
-@media screen and (max-width: 623px) {
-  .f1{
-    width: 100vh;
+/* For screens smaller than 600px (phones) */
+
+
+/*poppap massage relode time*/
+
+/* body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+} */
+
+.pop {
+  position: fixed;
+  bottom: 490px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:rgb(204, 150, 150);
+  border: 1px solid #ccc;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.close {
+  /* float: right; */
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.bsdk {
+  display: none;
+}
+
+
+@media (max-width: 738px) {
+
+  .bsdk {
+    display: block;
   }
   
-  .imgbox,.details{
-    overflow: hidden;
-    width: auto;
+  .f1, .f2, .card, .third {
+    width: 100%; /* Adjust width to fit the screen */
   }
+
+  .card, .third {
+    height: auto; /* Adjust height automatically */
+  }
+
+  .card img, .third img {
+    max-width: 100%; /* Ensure images don't overflow their containers */
+  }
+
+  .card .details, .third .des {
+    width:100%; /* Adjust width of detail containers */
+    padding: 10px; /* Adjust padding */
+    /* height: 90%; */
+  }
+
+  .popup-content {
+    width: 90%; /*Adjust popup width*/
+  }
+
+  .pop {
+    position: fixed;
+    bottom: 390px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(204, 150, 150);
+    border: 1px solid #ccc;
+    padding: 50px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-
-@media screen and (max-width: 623px) {
-  .f2{
-    width: 100vh;
-  }
+.amibaal {
+  align-items: center;
+  text-align: center;
+}
 }

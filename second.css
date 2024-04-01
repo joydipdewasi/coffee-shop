@@ -429,4 +429,24 @@
   align-items: center;
   text-align: center;
 }
+ 
+#popupContainer {
+  /* display: flex; */
+  background-color: rgb(172, 138, 138);
+  width: 300px;
+  height: 200px;
+  /* margin: 100px auto; */
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  position: fixed;
+  top: 15%;
+  left: 9%;
+  /* max-width: 90%; */
+  z-index: 9999;
+  max-width: 90%;
+  text-align: center;
+}
+
 }

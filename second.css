@@ -23,7 +23,7 @@
 }
 
 .card {
-    width:600px;
+    width:500px;
     height: 380px;/* hight change kora hota para for phone view*/
     border: 3px solid #f5f1f1;
     border-radius: 10px;
@@ -34,8 +34,6 @@
     overflow: hidden;
     transition: 0.1 ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /* border-radius:10% ; */
-    /* border-radius: 80px 80px 80px 80px; */
   }
 
   .card img {
@@ -45,11 +43,6 @@
     object-fit: cover;
     overflow: hidden;
     border-radius:10% ; /*border surcal korar jonno */
-    /* border-radius:5px solid white ; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-
   }
 
   .card img {
@@ -179,8 +172,6 @@
     display: flex;
     overflow: hidden;
     transition: 0.1 ease-in-out;
-    /* border-radius:10% ; */
-    /* border-radius: 80px 80px 80px 80px; */
   }
   .third img {
     padding: 10px 10px 35px 10px;
@@ -188,8 +179,6 @@
     height: 400px; /* hight 470px korta hota para for phone view*/
     overflow: hidden;
     border-radius:10% ; /*border surcal korar jonno */
-    /* border-radius:5px solid white ; */
-    /* display: flex; */
     justify-content: center;
     align-items: center;
   
@@ -241,16 +230,7 @@
     transform: rotate(+5deg) translatex(+10px);
     cursor: pointer;
   }
-  /* .third .des::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom:10px solid transparent ;
-    border-left: 10px solid white; 
-  } */
+ 
   .des{
     color:rgb(249, 245, 245);
   }
@@ -345,18 +325,6 @@
   margin-right: 10px;
   color: #000000;
 }
-
-/* For screens smaller than 600px (phones) */
-
-
-/*poppap massage relode time*/
-
-/* body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-} */
 
 .pop {
   position: fixed;
